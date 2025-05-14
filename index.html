@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Request Your Custom GPT</title>
+  <style>
+    body {
+      background-color: #0a0a0a;
+      color: #f2f2f2;
+      font-family: 'Segoe UI', sans-serif;
+      padding: 40px;
+      max-width: 800px;
+      margin: auto;
+    }
+    h1 {
+      color: #00ffe1;
+      font-size: 2em;
+      margin-bottom: 20px;
+    }
+    p {
+      color: #ccc;
+      margin-bottom: 20px;
+    }
+    label, input, textarea {
+      display: block;
+      margin-bottom: 15px;
+      width: 100%;
+      max-width: 500px;
+    }
+    input, textarea {
+      padding: 10px;
+      background: #1a1a1a;
+      border: 1px solid #333;
+      color: #f2f2f2;
+      border-radius: 4px;
+    }
+    .button {
+      background: #00ffe1;
+      color: #000;
+      font-weight: bold;
+      padding: 10px 20px;
+      border-radius: 6px;
+      border: none;
+      cursor: pointer;
+    }
+    .back-link {
+      display: inline-block;
+      margin-top: 30px;
+      color: #00ffe1;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <h1>Request Your Custom GPT</h1>
+  <p>Thanks for your payment! Fill out this form so I can build your GPT. You'll get it within 48 hours.</p>
+
+  <form action="https://formspree.io/f/xldbokzo" method="POST">
+    <label for="email">Your Email:</label>
+    <input type="email" name="email" required>
+
+    <label for="description">What should your GPT do? Be specific:</label>
+    <textarea name="description" rows="6" required></textarea>
+
+    <button type="submit" class="button">Submit Request</button>
+  </form>
+
+  <a href="https://gpthq.vercel.app" class="back-link">← Back to GPT HQ</a>
+</body>
+</html>
